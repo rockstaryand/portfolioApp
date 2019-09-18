@@ -1,0 +1,51 @@
+[debug] [2019-09-11T13:13:05.737Z] ----------------------------------------------------------------------
+[debug] [2019-09-11T13:13:05.739Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-09-11T13:13:05.740Z] CLI Version:   7.3.1
+[debug] [2019-09-11T13:13:05.740Z] Platform:      win32
+[debug] [2019-09-11T13:13:05.740Z] Node Version:  v12.6.0
+[debug] [2019-09-11T13:13:05.741Z] Time:          Wed Sep 11 2019 15:13:05 GMT+0200 (South Africa Standard Time)
+[debug] [2019-09-11T13:13:05.741Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-11T13:13:05.750Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-11T13:13:05.751Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dell\Documents\my-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2019-09-11T13:20:51.629Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2019-09-11T13:20:53.827Z] <<< HTTP RESPONSE 409
+[debug] [2019-09-11T13:20:53.828Z] <<< HTTP RESPONSE BODY
+[debug] [2019-09-11T13:20:53.829Z] HTTP Error: 409, Requested entity already exists
+[debug] [2019-09-11T13:20:54.520Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:203:13)
+    at Request.EventEmitter.emit (domain.js:471:20)
+    at Request.<anonymous> (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:203:13)
+    at Request.EventEmitter.emit (domain.js:471:20)
+    at IncomingMessage.<anonymous> (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:291:20)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
